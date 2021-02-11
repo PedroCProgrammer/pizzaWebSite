@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,30 @@
     <title>Daniel's pizza - A melhor pizza!</title>
 </head>
 <body>
-    <section class="home">
+    <section class="content-home">
         <header class="menu">
             <img src="img/square.png" alt="" width="42px" onclick="functionMenu()">
             <img src="img/facebook.png" alt="" width="32px" id="facebook">
             <img src="img/twitter.png" alt="" width="32px" id="twitter">
         </header>
+        <div class="content-home-products">
+            <div class="left-side">
+                <h1>Italiana.</h1>
+                <h3>Ingrediente1, Ingrediente2, Ingrediente3, Ingrediente4, Ingrediente5, Ingrediente6.</h3>
+                <h1>$16.99</h1>
+                <select name="sizes" id="sizes">
+                    <optgroup>
+                        <option value="P"></option>
+                        <option value="M"></option>
+                        <option value="G"></option>
+                    </optgroup>
+                </select>
+                <input type="button" value="Order Now"/>
+            </div>
+            <div class="right-side">
+                <img src="img/pizza-photo.png" alt="" width="300px">
+            </div>
+        </div>
     </section>
     <script src="javascript/index.js"></script>
 </body>
