@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(51, 50, 50);
+}
+
+.menu{
+    width: 4%;
+    height: 100vh;
+    background-color: rgb(34, 32, 32);
+}
+
+.menu img{
+    margin: 10px 0 0 15px;
+}
+
+#facebook, #twitter{
+    position: relative;
+    top: 78%;
+    margin: 20px;
+}
