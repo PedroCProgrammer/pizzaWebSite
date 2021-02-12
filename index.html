@@ -10,10 +10,20 @@
 <body>
     <section class="content-home">
         <header class="menu">
-            <img src="img/square.png" alt="" width="42px" onclick="functionMenu()">
-            <img src="img/facebook.png" alt="" width="32px" id="facebook">
-            <img src="img/twitter.png" alt="" width="32px" id="twitter">
+            <img src="img/square.png"  width="42px" onclick="functionMenu()" id="menuHamburguer">
+            <img src="img/square-x.png" width="42px" id="x-menu" onclick="functionFalseMenu()">
+            <img src="img/facebook.png"  width="32px" id="facebook">
+            <img src="img/twitter.png"  width="32px" id="twitter">
         </header>
+        <div class="menu-hidden">
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Produtos</a></li>
+                    <li><a>Contato</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="content-home-products">
             <div class="left-side">
                 <h1 id="pizza-sabor-type">Italian.</h1>
@@ -31,7 +41,7 @@
                 <input type="button" value="ORDER NOW" id="btn-Order-now"/>
             </div>
             <div class="right-side">
-                <img src="img/pizza-photo.png" alt="" width="400px">
+                <img src="img/pizza-photo.png"  width="400px">
                 <div class="content-choses">
                     <div id="one" onclick="functionOne()"></div>
                     <div id="two" onclick="functionTwo()"></div>
