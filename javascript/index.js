@@ -72,3 +72,9 @@ function functionFive(){
     ingredientes.innerHTML = 'Mussarela, Cogumelo, Presunto, Alcachofra, Azeitona, Manjerona.'
     price.innerHTML = 'R$16,99'
 }
+
+function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+  }

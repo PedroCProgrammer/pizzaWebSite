@@ -18,51 +18,105 @@ body{
     background-color: rgb(34, 32, 32);
 }
 
-#menuHamburguer{
-    margin: 0 auto 0 auto;
+#menu {
+    z-index: 2;
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
     cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 22px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav li a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background-color: orangered;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-60%);
 }
 
 #facebook, #twitter{
     position: relative;
-    top: 75%;
+    top: 85%;
     margin: 20px;
     cursor: pointer;
-}
-
-.menu-hidden{
-    background-color: rgb(34, 32, 32);
-    position: absolute;
-    top: 0%;
-    left: 4%;
-    display: none;
-}
-
-.menu-hidden nav ul li{
-    list-style: none;
-    margin-right: 15px;
-    font-size: 1.5rem;
-    color: white;
-    font-family: sans-serif;
-    cursor: pointer;
-}
-
-.menu-hidden nav ul li:last-child{
-    margin-right: 0;
-}
-
-.menu-hidden nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-#x-menu{
-    display: none;
-    cursor: pointer;
-    padding-top: 10px;
-    margin: 0 auto 0 auto;
 }
 
 .content-home-products{
@@ -139,4 +193,56 @@ body{
     background-color: gray;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+    .menu{
+        width: 5%;
+    }
+    #facebook, #twitter{
+        top: 80%;
+    }
+    #menu-bar{
+        margin: 20px 10px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .menu{
+        display: none;
+    }
+    .content-home-products{
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .price-and-select{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    img{
+        margin-top: 40px;
+    }
+    #ingredientes{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #pizza-sabor-type{
+        font-size: 4rem;
+    }
+    #ingredientes{
+        font-size: 1rem;
+    }
+    .left-side{
+        width: 410px;
+    }
+    
 }
