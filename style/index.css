@@ -212,7 +212,6 @@ body{
         display: none;
     }
     .content-home-products{
-        margin: 20px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -245,4 +244,22 @@ body{
         width: 410px;
     }
     
+}
+
+@media only screen and (max-width: 375px){
+    img{
+        width: 375px;
+    }
+    .left-side{
+        width: 375px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    img{
+        width: 320px;
+    }
+    .left-side{
+        width: 320px;
+    }
 }
